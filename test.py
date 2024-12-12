@@ -12,4 +12,11 @@ def fibonacci_sequence(n):
     for i in range(n):
         sequence.append(fibonacci(i))
     return sequence
- 
+
+def is_prime(number):
+    if not isinstance(number, int) or number < 2:
+        raise ValueError("Input must be an integer greater than 1")
+    for i in range(2, int(number ** 0.5) + 1):
+        if number % i == 0:
+            return False
+    return True
