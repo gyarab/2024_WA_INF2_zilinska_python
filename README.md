@@ -1,38 +1,27 @@
-# Redakční systém v Django
+# Django CMS – Seznam knih 📚
 
-Tato aplikace vytvořená k demonstraci možností frameworku Django v hodinách Webové aplikace.
+Tento projekt je jednoduchý CMS (Content Management System) postavený na Django, který zobrazuje seznam knih načítaný z JSON souboru.
 
-## Struktura datového modelu
+## 📌 Funkce
+- Zobrazení seznamu knih na homepage
+- Detailní stránka každé knihy
+- Použití Django šablon (`extends`, `block`) pro organizaci HTML
+- Načítání dat ze souboru `data.json`
 
-Projekt obsahuje tři hlavní modely: `Category`, `Author` a `Article`. Tyto modely tvoří základní strukturu redakčního systému a jejich vztahy jsou následující:
+## 🛠️ Instalace a spuštění
+1. Klonuj tento repozitář:
+   ```sh
+   git clone https://github.com/tvoje_repo/django_cms.git
+   cd django_cms
 
-### **`Category`** (Kategorie)
-- Reprezentuje tematickou oblast článků.
-- Obsahuje atributy `name` (název) a `description` (popis).
-- Vztah M:N s modelem `Article` (jeden článek může patřit do více kategorií).
+2. Vytvoř a aktivuj virtuální prostředí:
+python -m venv venv
+source venv/bin/activate  # Mac/Linux
+venv\Scripts\activate  # Windows
 
-### **`Author`** (Autor)
-- Reprezentuje autora článku.
-- Obsahuje atributy `first_name`, `last_name`, `bio` (stručný popis) a `email`.
-- Vztah 1:N s modelem `Article` (jeden autor může napsat více článků).
+3. Nainstaluj závislosti:
+pip install -r requirements.txt
 
-### **`Article`** (Článek)
-- Reprezentuje jednotlivý článek publikovaný v systému.
-- Obsahuje atributy `title` (název), `perex` (krátký úvodní text), `text` (plný obsah článku) a `published` (datum a čas publikace).
-- Vztah M:N s modelem `Category`.
-- Vztah 1:N s modelem `Author`.
+4. Spusť Django server:
+python manage.py runserver
 
-Projekt byl vyvíjen s asistencí GitHub Copilot.
-
-## Zdroj obsahu
-
-Veškerý textový a obrázkový obsah byl vygenerován pomocí ChatGPT jako ukázka možností generování obsahu pro testovací účely. 
-
-Úvodní prompt:
-```
-Ahoj, vytvářím jednoduchý redakční systém a potřebuji ukázková data. Chci udělat vtipný surealistický, až dadaistický web, s několika rubrikami, autory a vygenerovat několik článků. Nejprve mi vygeneruj seznam šesti rubrik. Každá rubrika má název, max 30 znaků a krátký popisek (cca 200 znaků).
-```
-
-Zajímavý poznatek:
-
-![ChatGPT](chatgpt.png)
