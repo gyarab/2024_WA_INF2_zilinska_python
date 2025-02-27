@@ -1,0 +1,81 @@
+[
+    {
+      "book_name": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Fiction",
+      "year": 1925
+    },
+    {
+      "book_name": "1984",
+      "author": "George Orwell",
+      "genre": "Dystopian",
+      "year": 1949
+    },
+    {
+      "book_name": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genre": "Fiction",
+      "year": 1960
+    },
+    {
+      "book_name": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "genre": "Romance",
+      "year": 1813
+    },
+    {
+      "book_name": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "genre": "Fantasy",
+      "year": 1937
+    },
+    {
+      "book_name": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "genre": "Fiction",
+      "year": 1951
+    },
+    {
+      "book_name": "Moby-Dick",
+      "author": "Herman Melville",
+      "genre": "Adventure",
+      "year": 1851
+    },
+    {
+      "book_name": "Brave New World",
+      "author": "Aldous Huxley",
+      "genre": "Dystopian",
+      "year": 1932
+    },
+    {
+      "book_name": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "genre": "Fantasy",
+      "year": 1954
+    },
+    {
+      "book_name": "The Picture of Dorian Gray",
+      "author": "Oscar Wilde",
+      "genre": "Gothic",
+      "year": 1890
+    },
+    {
+      "book_name": "The Chronicles of Narnia",
+      "author": "C.S. Lewis",
+      "genre": "Fantasy",
+      "year": 1950
+    },
+    {
+      "book_name": "The Shining",
+      "author": "Stephen King",
+      "genre": "Horror",
+      "year": 1977
+    },
+    {
+      "book_name": "War and Peace",
+      "author": "Leo Tolstoy",
+      "genre": "Historical Fiction",
+      "year": 1869
+    }
+  ]
+  
