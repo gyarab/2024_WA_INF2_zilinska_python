@@ -4,6 +4,9 @@ from django.urls import reverse
 import json
 from .models import Article, Category, Author
 
+from django.shortcuts import render
+from .models import Book  # Ujisti se, že máš model knihy
+
 # Create your views here.
 def homepage(request):
     categories = Category.objects.all()
@@ -35,3 +38,7 @@ def author(request, id):
     
     return render(request, 'content/author.html', {'categories': categories, 'authors': authors, 'author': author, 'articles': articles})
     
+
+def book_list(request):
+    books = Book.objects.all()  # Načti všechny knihy z databáze
+    return render(request, 'book_list.html', {'books': books})
